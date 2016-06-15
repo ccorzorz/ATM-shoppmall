@@ -1,0 +1,42 @@
+.
+|______init__.py
+|____bin    #执行文件目录
+| |____atm.py   #atm 终端开始程序,python3 atm.py start
+| |____credit_manage.py #atm 后台开始程序,python3 atm.py start
+| |____shop.py  #
+|____conf   #配置文件信息
+| |____setting.py   #通用设置模块
+|____core
+| |____atm_admin_op.py  #ATM 管理操作模块
+| |____atm_run.py   #ATM 终端运行主程序
+| |____bills_rate.py    #ATM用户查询账单模块
+| |____data_op.py   #数据操作类模块
+| |____format_num.py    #价格处理模块,处理为人民币标准显示
+| |____generate_bills.py    #账单生成模块
+| |____logger.py    #日志处理模块
+| |____manager_main.py  #ATM 管理员操作主程序
+| |____pass_handler.py  #密码 MD5加密处理模块
+| |____shop_mall.py #商城主程序模块
+| |____terminal_discover_bills.py   #ATM 查看账单模块
+| |____terminal_op.py   #ATM 用户常规操作模块
+| |____terminal_pay.py  #ATM 支付接口
+| |____terminal_repay.py    #ATM 还款模块
+| |____terminal_show_record.py  #ATM 查看消费记录模块
+| |____terminal_transfers.py    #ATM 转账模块
+| |____terminal_view_credit.py  #ATM 查看用户额度信息模块
+| |____terminal_withdraw.py #ATM 终端取现模块
+| |____time_cal.py  #时间处理模块
+| |____veri_code.py #随机验证码模块,用来支付时验证
+|____db #数据库目录
+| |____201605_bills.json    #atm 每月账单
+| |____201609_bills.json    #atm 每月账单
+| |____atm_admin_db.json    #atm 管理员数据库
+| |____atm_cart_db.json #atm 系统用户信息,包括消费记录数据等信息
+| |____goods.json   #商城商品信息,包括价格,分类以及库存等
+| |____mall_cart.json   #商城用户购物车信息,保存用户未结账退出时的购物车信息
+| |____mall_user.json   #商城用户文件数据库,包括购买记录
+| |____mall_user_lock   #商城用户锁定用户文件
+|____log
+| |____access.log   #atm 用户访问日志
+| |____admin.log    #atm 管理员操作日志
+| |____trans.log    #atm 用户终端操作日志
